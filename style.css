@@ -33,6 +33,14 @@ body{
   align-items: center;
 }
 
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
 #about-section{
   position:absolute;
   left:0px;
@@ -40,6 +48,30 @@ body{
   width:100%;
 }
 
-#about-section #title{
-  color:red;
+#welcome-section{
+  position:absolute;
+  right:0px;
+  top:0px;
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:#2F3033;
+  color:white;
+}
+
+#project-section{
+  position:absolute;
+  left:0px;
+  top:180vh;
+  width:100%;
+  text-align: center;
+}
+
+#project{
+  display: inline-block;
+  margin: 20px;
+  object-fit: cover;
+  max-width: 515px;
 }

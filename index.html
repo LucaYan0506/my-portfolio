@@ -9,7 +9,7 @@
 </head>
 <body>
   <nav id="navbar">
-    <div style="float:left; color:white;padding: 4px 20px;font-size: 23px;">
+    <div style="float:left;padding: 4px 20px;font-size: 23px;">
       ZHONG YI YAN
     </div>
   
@@ -25,27 +25,43 @@
   </nav>
 
   <section id="welcome-section">
+    <canvas></canvas>
     <div>
-      <h1 style="font-size:52px;">Hey I'm Zhong Yi Yan</h1>
-      <p style="font-size:24px;text-align:center;color:#A73040; position:relative; top:-45px;">a student at The Manchester College</p>
+      <h1 style="font-size:52px;position: relative;">Hey I'm Zhong Yi Yan</h1>
+      <p style="font-size:24px;text-align:center;color:#faee02; position:relative; top:-45px;">a student at The Manchester College</p>
     </div>
   </section>
 
   <section id="about-section">
-    <div id="word-cloud" style="position: absolute;right: 20px; width:30%;padding:0 10%"></div>
+    <div id="word-cloud" style="position: absolute;right: 20px; width:30%;padding:0 10%; z-index: 0;"></div>
 
     <div id="description" style="position: absolute;left: 0px; width:50%;padding-left: 45px;">
-      <h2 id="title">A little bit about me</h2>
+      <h2 style="color:#ef5050;">A little bit about me</h2>
       <span>
-        I'm a student at The Manchester College
+        Hi my name is Zhong Yi Yan. I'm a student at The Manchester College
       </span>
     </div>
 
   </section>
 
+  <section id="project-section">
+      <h2 style="color: #ef5050;">Projects</h2>
+      <div id="project">
+        <img src="Assets/project1.png" style="width: 100%; height: 100%;">
+      </div>
 
+      <div id="project">
+        <img src="Assets/project2.png" style="width: 100%; height: 100%;">
+      </div>
+  </section>
 
-
+  
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-105392568-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="fluid_simulation.js"></script>
   <script type="text/javascript" src="TagCloud.min.js"></script>
   <script type="text/javascript" src="cloud.js"></script>
 </body>
