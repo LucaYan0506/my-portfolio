@@ -23,7 +23,7 @@ body{
 }
 
 #welcome-section{
-  position:absolute;
+  position:relative;
   right:0px;
   top:0px;
   height:100vh;
@@ -31,6 +31,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  color:white;
 }
 
 canvas {
@@ -42,36 +43,45 @@ canvas {
 }
 
 #about-section{
-  position:absolute;
+  position:relative;
   left:0px;
-  top:100vh;
   width:100%;
+  text-align: center;
 }
 
-#welcome-section{
-  position:absolute;
-  right:0px;
-  top:0px;
-  height:100vh;
-  width:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background:#2F3033;
-  color:white;
+.tagcloud{
+  z-index: 0;
 }
 
 #project-section{
-  position:absolute;
+  position:relative;
   left:0px;
-  top:180vh;
   width:100%;
   text-align: center;
 }
 
 #project{
+  position: relative;
   display: inline-block;
-  margin: 20px;
+  margin: 40px 20px;
   object-fit: cover;
-  max-width: 515px;
+}
+
+#project img{
+  width: 60%;
+}
+
+#project #project-description{
+  position: absolute;
+  right: 0;
+  top: -30px;
+  
+  background-color: #396260; 
+  padding:30px;
+  width: 30%;
+  height: calc(100%);
+  
+  text-align: left;
+  word-wrap: break-word;
+  overflow: auto;
 }

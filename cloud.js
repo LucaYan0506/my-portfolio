@@ -15,7 +15,8 @@ function update_word_cloud(){
         'LeetCode', 'DFS', 'BFS', 'Dynamic Programming', 'Hash Table', 'Bynary Search', 'Bynary Tree'
     ];
     const option = {
-        'radius': pixels
+        'radius': pixels,
+        'maxSpeed': 'fast'
     };
 
     //generate new one
