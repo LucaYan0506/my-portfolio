@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <title>ZHONG YI YAN</title>
 </head>
 <body>
@@ -14,12 +14,12 @@
     </div>
   
     <div style="float:right">
-      <a id="nav-link">Home</a>
-      <a id="nav-link">About</a>
-      <a id="nav-link">Projects</a>
-      <a id="nav-link">Skills</a>
-      <a id="nav-link">Education</a>
-      <a id="nav-link">Contact</a>
+      <a href="index.html" id="nav-link">Home</a>
+      <a href="about.html" id="nav-link">About</a>
+      <a href="" id="nav-link">Projects</a>
+      <a href="" id="nav-link">Skills</a>
+      <a href="" id="nav-link">Education</a>
+      <a href="" id="nav-link">Contact</a>
     </div>
   
   </nav>
@@ -59,7 +59,7 @@
   <section id="project-section">
     <h2 style="color: #ef5050;">Projects</h2>
     <div id="project">
-      <img src="Assets/project1.png">
+      <img src="../Assets/project1.png">
       <div id="project-description">
         <div id="txt">
           <h1 style="margin-top:0;">Guess word</h1>
@@ -83,7 +83,7 @@
     </div>
 
     <div id="project">
-      <img src="Assets/project2.png">
+      <img src="../Assets/project2.png">
       <div id="project-description">
         <div id="txt">
           <h1 style="margin-top: 0;">2048</h1>
@@ -138,7 +138,7 @@
       </div>
       <div class="skills">
           <div class="details">
-              <span>jQuery</span>
+              <span>Python</span>
               <span>68%</span>
           </div>
           <div class="bar">
@@ -151,37 +151,43 @@
 
   <section id="contact-section">
     <div class="wrapper">
+      <h2 style="color: #2DFFF2;">Contact me</h2>
 
-      <div style="display: inline-block;">
-        <h2 style="color: #2DFFF2;">Contact me</h2>
+      <div id="contact-text">
           I'm interested in apprenticeship, freelance and large projects.  <br>
           However, if you have other request or question drop me a message.
       </div>
 
 
-      <div style="display: inline-block; position: absolute; right: 0;">
+      <div id="contact-form">
         <form action="mailto:lucayan0506@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
-          Name:<br>
-          <input type="text" size="19" name="ContactName"><br><br>
-          Message:<br> <textarea name="ContactCommentt" rows="6" cols="20"> </textarea>
-          <br><br> <input type="submit" value="Submit"> 
+          <input type="email" name="ContactName" placeholder="Email"><br>
+          <input type="text" name="ContactName" placeholder="Subject"><br>
+          <textarea name="" id="" style="resize:vertical" placeholder="Messagge"></textarea>
+          <br><br> <input type="submit" style="width: calc(100% + 20px)" value="Submit"> 
         </form>
       </div>
 
-
+      <div style="clear:both"></div>
     </div>
-  
-
 
   </section>
+
+  <footer>
+    <img src="https://api.iconify.design/simple-icons/leetcode.svg?width=48" alt="">
+    <img src="https://ytmp3.herokuapp.com/static/github.png" alt="">
+    <img src="https://ytmp3.herokuapp.com/static/linkedin.png" alt="">
+    <p style="color:#eee">Copyright Ⓒ 2022 Zhong Yi Yan | All rights reserved</p>
+  </footer>
 
   <script>
     window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
     ga('create', 'UA-105392568-1', 'auto');
     ga('send', 'pageview');
   </script>
-  <script src="fluid_simulation.js"></script>
-  <script type="text/javascript" src="TagCloud.min.js"></script>
-  <script type="text/javascript" src="cloud.js"></script>
+  <script src="../JS/fluid_simulation.js"></script>
+  <script src="../JS/TagCloud.min.js"></script>
+  <script src="../JS/cloud.js"></script>
+  <script src="../JS/index.js"></script>
 </body>
 </html>

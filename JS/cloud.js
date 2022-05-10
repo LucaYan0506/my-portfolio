@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => update_word_cloud())
 window.addEventListener('resize', () => update_word_cloud())
 
+
 function update_word_cloud(){
     //clear word cloud
     document.getElementById("word-cloud").innerHTML = "";
@@ -9,7 +10,7 @@ function update_word_cloud(){
     var parentWidth = parseInt(document.getElementById("word-cloud").clientWidth);
     var pixels = parentWidth*(percents/100);
     
-    console.log(pixels);
+    console.log("d");
     const texts = [
         'Visual Basic', 'C#', 'C++', 'Django', 'JavaScript', 'HTML', 'CSS', 'Git', 'Python', 
         'LeetCode', 'DFS', 'BFS', 'Dynamic Programming', 'Hash Table', 'Bynary Search', 'Bynary Tree'
