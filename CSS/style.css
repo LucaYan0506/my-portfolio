@@ -351,22 +351,41 @@ circle{
   stroke: #0d96e0;
   stroke-width: 20px;
   stroke-dasharray: 472;
-  stroke-dashoffset: 200;
-  animation: anim 2s;
 }
 
-@keyframes anim {
+#prob-solving{
+  stroke-dashoffset: 80;
+  animation: prob-solving-anim 2s;
+}
+@keyframes prob-solving-anim {
   100%{
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 80;
   }
   0%{
     stroke-dashoffset: 472;
   }
 }
 
-@keyframes anim {
+#team-work{
+  stroke-dashoffset: 165;
+  animation: team-work-anim 2s;
+}
+@keyframes team-work-anim {
   100%{
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 165;
+  }
+  0%{
+    stroke-dashoffset: 472;
+  }
+}
+
+#comm{
+  stroke-dashoffset: 188;
+  animation: comm-anim 2s;
+}
+@keyframes comm-anim {
+  100%{
+    stroke-dashoffset: 188;
   }
   0%{
     stroke-dashoffset: 472;
