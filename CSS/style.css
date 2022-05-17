@@ -154,20 +154,36 @@ canvas {
  
 
 }
+#c-sharp-bar{
+  animation: c-sharp-fill 2s forwards;
+}
+@keyframes c-sharp-fill{
+  100%{
+      width: 70%;
+  }
+}
+#cpp-bar{
+  animation: cpp-fill 2s forwards;
+}
+@keyframes cpp-fill{
+  100%{
+      width: 75%;
+  }
+}
+#vb-bar{
+  animation: vb-fill 2s forwards;
+}
+@keyframes vb-fill{
+  100%{
+      width: 70%;
+  }
+}
 #html-bar{
   animation: html-fill 2s forwards;
 }
 @keyframes html-fill{
   100%{
-      width: 90%;
-  }
-}
-#css-bar{
-  animation: css-fill 2s forwards;
-}
-@keyframes css-fill{
-  100%{
-      width: 75%;
+      width: 50%;
   }
 }
 #js-bar{
@@ -175,18 +191,57 @@ canvas {
 }
 @keyframes js-fill {
   100%{
-      width: 72%;
+      width: 40%;
   }
 }
-#jQuery-bar{
-  animation: jQuery-fill 2s forwards;
+#py-bar{
+  animation: py-fill 2s forwards;
 }
-@keyframes jQuery-fill{
+@keyframes py-fill{
   100%{
       width: 58%;
   }
 } 
-
+#hash-table-bar{
+  animation: hash-table-fill 2s forwards;
+}
+@keyframes hash-table-fill{
+  100%{
+      width: 50%;
+  }
+} 
+#dp-bar{
+  animation: dp-fill 2s forwards;
+}
+@keyframes dp-fill{
+  100%{
+      width: 40%;
+  }
+} 
+#dfs-bar{
+  animation: dfs-fill 2s forwards;
+}
+@keyframes dfs-fill{
+  100%{
+      width: 68%;
+  }
+} 
+#bfs-bar{
+  animation: bfs-fill 2s forwards;
+}
+@keyframes bfs-fill{
+  100%{
+      width: 68%;
+  }
+} 
+#bs-bar{
+  animation: bs-fill 2s forwards;
+}
+@keyframes bs-fill{
+  100%{
+      width: 68%;
+  }
+} 
 #contact-section{
   width: 100%;
   position: relative;
@@ -251,8 +306,8 @@ footer img{
 }
 
 #skills-container{
-  padding:40px;
-  min-height: calc(100vh - 212px);
+  padding:60px 40px;
+  min-height: calc(100vh - 219px);
   min-width:520px;
   width: calc(100% - 80px);
   position: relative;
@@ -262,6 +317,11 @@ footer img{
 #prof-skills{
   display: inline-block;
   position: relative;
+}
+
+#prof-skills p{
+  padding-left: 40px; 
+  text-align: center;
 }
 
 #outer{
