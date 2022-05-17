@@ -173,15 +173,17 @@
 
       <div id="contact-text">
           I'm interested in apprenticeship, freelance and large projects.  <br>
-          However, if you have other request or question drop me a message.
+          However, if you have other request or question drop me a message. <br> 
+          <a style="color:white;text-decoration:none" href="tel:07516315610"><b>Phone: 07516 315610</b></a>
+          <a style="color:white;text-decoration:none" href="mailto:lucaYan0506@gmail.com"><b>Email: lucayan0506@gmail.com</b></a>
       </div>
 
-
+      <iframe name="hiddenFrame" class="hide" style="display: none;"></iframe>
       <div id="contact-form">
-        <form action="mailto:lucayan0506@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
-          <input type="email" name="ContactName" placeholder="Email"><br>
-          <input type="text" name="ContactName" placeholder="Subject"><br>
-          <textarea name="" id="" style="resize:vertical" placeholder="Messagge"></textarea>
+        <form action="https://own-apis.herokuapp.com/send_message/" method="POST" target="hiddenFrame" onsubmit="alert('Message sent successfully, thank you for your message. I will reply as soon as possible (make sure that the email is correct, otherwise I cannot reply)');location.reload()">
+          <input type="email" name="email" placeholder="Email" required><br>
+          <input type="text" name="subject" placeholder="Subject" required><br>
+          <textarea name="message" id="" style="resize:vertical" placeholder="Messagge" required></textarea>
           <br><br> <input type="submit" style="width: calc(100% + 20px)" value="Submit"> 
         </form>
       </div>

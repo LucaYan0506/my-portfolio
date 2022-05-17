@@ -281,6 +281,9 @@ canvas {
   height: 260px;
   align-items: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 form input, form textarea, form input, form button{
