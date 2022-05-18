@@ -30,6 +30,6 @@ function send_message(form){
     })
     .then(data => { 
         alert('Message sent successfully, thank you for your message. I will reply as soon as possible (make sure that the email is correct, otherwise I cannot reply)');
-        console.log(data) 
+        location.reload()
     });
 }
