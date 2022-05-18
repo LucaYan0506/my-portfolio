@@ -21,14 +21,15 @@ window.addEventListener('resize', () => {
 function send_message(form){
     fetch(`https://own-apis.herokuapp.com/send_message/`, {
         method: "post",
+        mode: 'no-cors',
         body: JSON.stringify({
             email: form.children.email.value,
             subject: form.children.subject.value,
             message:form.children.message.value,
         })
     })
-    .then((data) => { 
-        console.log(data)
-        alert(data)
+    .then(data => { 
+        alert('Message sent successfully, thank you for your message. I will reply as soon as possible (make sure that the email is correct, otherwise I cannot reply)');
+        console.log(data) 
     });
 }
