@@ -16,4 +16,19 @@ window.addEventListener('resize', () => {
         contact_text.style.height = '';
         contact_form.style.width = '';
     }
-})
+});
+
+function send_message(form){
+    fetch(`https://own-apis.herokuapp.com/send_message/`, {
+        method: "post",
+        body: JSON.stringify({
+            email: form.children.email.value,
+            subject: form.children.subject.value,
+            message:form.children.message.value,
+        })
+    })
+    .then((data) => { 
+        console.log(data)
+        alert(data)
+    });
+}

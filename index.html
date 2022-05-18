@@ -40,14 +40,14 @@
         <span>
           Hi, my name is Zhong Yi Yan. I'm a student at The Manchester College. <br>
           The first time I started to code was in 2019 using Visual Basic. <br>
-          I started from creating some Windows Forms apps and from there, <br>
-          I noticed that I really like coding and solving problems. <br> <br>
+          I started by creating some Windows Forms apps and from there, <br>
+          I noticed that I like coding and solving problems. <br> <br>
           After Visual Basic I learnt C# and C++ because they are commonly <br>
           used to create games. <br>
           At the same time, I discovered LeetCode, a website to practice my <br>
           programming skills by solving coding questions.  <br><br>
 
-          In 2021 I started an IT course at The Manchester College, there I learnt<br>
+          In 2021 I started an IT course at The Manchester College, where I learnt<br>
           web development using HTML & CSS, javascript and Django.
           
         </span>
@@ -172,18 +172,17 @@
       <h2 style="color: #2DFFF2;">Contact me</h2>
 
       <div id="contact-text">
-          I'm interested in apprenticeship, freelance and large projects.  <br>
-          However, if you have other request or question drop me a message. <br> 
+          I'm interested in an apprenticeship, freelance and large projects.  <br>
+          However, if you have other equests or questions drop me a message. <br> 
           <a style="color:white;text-decoration:none" href="tel:07516315610"><b>Phone: 07516 315610</b></a><br> <br>
           <a style="color:white;text-decoration:none" href="mailto:lucayan0506@gmail.com"><b>Email: lucayan0506@gmail.com</b></a>
       </div>
 
-      <iframe name="hiddenFrame" class="hide" style="display: none;"></iframe>
       <div id="contact-form">
-        <form action="https://own-apis.herokuapp.com/send_message/" method="POST" target="hiddenFrame" onsubmit="alert('Message sent successfully, thank you for your message. I will reply as soon as possible (make sure that the email is correct, otherwise I cannot reply)');location.reload()">
-          <input type="email" name="email" placeholder="Email" required><br>
-          <input type="text" name="subject" placeholder="Subject" required><br>
-          <textarea name="message" id="" style="resize:vertical" placeholder="Messagge" required></textarea>
+        <form action="#" onsubmit="send_message(this);return false;">
+          <input type="email" name="email" id="email" placeholder="Email" required><br>
+          <input type="text" name="subject" id="subject" placeholder="Subject" required><br>
+          <textarea name="message" id="message" style="resize:vertical" placeholder="Messagge" required></textarea>
           <br><br> <input type="submit" style="width: calc(100% + 20px)" value="Submit"> 
         </form>
       </div>
