@@ -23,6 +23,7 @@ function send_message(form){
         method: "post",
         mode: 'no-cors',
         body: JSON.stringify({
+            name: form.children.name.value,
             email: form.children.email.value,
             subject: form.children.subject.value,
             message:form.children.message.value,
