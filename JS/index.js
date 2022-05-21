@@ -19,7 +19,7 @@ window.addEventListener('resize', () => {
 });
 
 function send_message(form){
-    fetch(`https://own-apis.herokuapp.com/send_message/`, {
+    fetch(`http://127.0.0.1:8000/send_message/`, {
         method: "post",
         mode: 'no-cors',
         body: JSON.stringify({
