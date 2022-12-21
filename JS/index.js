@@ -19,7 +19,7 @@ window.addEventListener('resize', () => {
 });
 
 function send_message(form){
-    fetch(`https://own-apis.herokuapp.com/send_message/`, {
+    fetch(`https://lucayan.pythonanywhere.com/send_message/`, {
         method: "post",
         mode: 'no-cors',
         body: JSON.stringify({
