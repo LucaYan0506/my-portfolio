@@ -13,7 +13,7 @@ function update_word_cloud(){
     console.log("d");
     const texts = [
         'Visual Basic', 'C#', 'C++', 'Django', 'JavaScript', 'HTML', 'CSS', 'Git', 'Python', 
-        'LeetCode', 'DFS', 'BFS', 'Dynamic Programming', 'Hash Table', 'Bynary Search', 'Bynary Tree'
+        'LeetCode', 'DFS', 'BFS', 'Dynamic Programming', 'Hash Table', 'Bynary Search', 'Bynary Tree', 'React'
     ];
     const option = {
         'radius': pixels,

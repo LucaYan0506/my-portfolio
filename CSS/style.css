@@ -27,7 +27,7 @@ body{
   float:right;overflow-x: auto;overflow-y: hidden;width: calc(100% - 210px);
 }
 #navbar #right div{
-  width:700px;
+  width:535px;
   margin-left: auto;
 }
 #nav-link{
